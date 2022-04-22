@@ -1,0 +1,177 @@
+body{
+    margin:0px;
+    padding: 0;
+    background-color: rgb(27, 27, 27);
+    padding-bottom: 100px;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    background-color: rgb(20,20,20);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+  
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration:none;
+    text-align: center;
+}
+  
+/* Active/current link */
+.sidebar a.active {
+    background-color: rgb(27, 27, 27);
+    color: #25f884;
+}
+  
+/* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    color: #25f884;
+}
+  
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+  
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+  
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}
+
+.backgroundTxt{
+    color: white;
+    opacity: 0.3;
+    font-size: 2rem;
+    
+}
+.title-txt{
+    color: white;
+    font-size: 5rem;
+    text-align:center;
+}
+.titles{
+    margin-top: 150px;
+    text-align:center;
+    color: #25f884;
+    font-size: 3rem;
+    opacity: 0.5;
+}
+
+.paragraphs{
+    font-size:larger;
+    color: white;
+    text-align:center;
+    padding-bottom: 100px;
+    
+}
+
+.hBtn1{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #25f884;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+ 
+.hBtn1 .hBtn2{
+    position: relative;
+    z-index: 2;
+}
+  
+.hBtn1:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #25f884;
+    transition: all .35s;
+}
+  
+.hBtn:hover{
+    color: white;
+}
+  
+.hBtn1:hover:after{
+    width: 100%;
+}
+
+.cForm{
+    color: rgb(27, 27, 27);
+    opacity:0.6;
+    
+}
+
+.cinfo{
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box; 
+    border-radius: 5px;
+}
+.cmsg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 200px;
+    box-sizing: border-box; 
+    border-radius: 5px;
+    
+}
+.fa {
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    height:20pxl
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 50px;
+}
+.fa-github {
+    background: black;
+    color: white;
+    border-radius: 50px;
+}
+.fa-instagram {
+    background-image: linear-gradient(to right,#405DE6,#5851DB, #833AB4,#C13584,#E1306C, #FD1D1D,#F56040, #F77737,#FCAF45);
+    color: white;
+    border-radius: 50px;
+}
+#icons{
+    display: inline-block;
+    
+}
