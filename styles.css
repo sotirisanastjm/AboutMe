@@ -7,11 +7,11 @@ body{
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 210px;
+    width: 215px;
     background-color: rgb(20,20,20);
     position: fixed;
     height: 100%;
-    overflow: auto;
+    
 }
   
 /* Sidebar links */
@@ -154,7 +154,7 @@ div.content {
     width: 20px;
     text-align: center;
     text-decoration: none;
-    height:20pxl
+    height:20px;    
 }
 .fa-linkedin {
     background: #007bb5;
