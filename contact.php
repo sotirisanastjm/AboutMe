@@ -38,6 +38,8 @@
                     <textarea placeholder="Message" class="cmsg" name="message" rows="10" required></textarea>
                 </div>
                 <button class="hBtn1" style="background-color: rgb(27, 27, 27);" type="submit"><span class="hBtn2">Send message!</span></button>
+                <?php $_SESSION['submitted_form'] = True; ?>
+                
             </form>
             <h2 style="color: #25f884;opacity:0.5;font-size: 2rem;text-align:center;margin-top: 100px;">CONTACT ME DIRECTLY</h2>
             <p style="color: white;text-align:center;">Sotiris Anastasiadis<br>Thessaloniki,GR<br><b>sotiris.anastjm@gmail.com</b></p>
