@@ -46,7 +46,34 @@ div.content {
     padding: 1px 16px;
     height: 1000px;
 }
-  
+.container{
+    margin-left: 30px;
+    
+    
+}
+.container .card{
+    align-content: center;
+    margin: 20px;
+    height: 400px;
+    width: 600px;
+    text-align: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #000000, #3f3f3f);
+    box-shadow:  20px 20px 60px #000000,
+                -20px -20px 60px #3f3f3f;
+}
+.container .card:hover{
+    transform: scale(0.98);
+    box-shadow: 20px 20px 60px #25f884,
+                -20px -20px 60px #000000;
+}
+.container .card a:hover span{
+    
+    display: block;
+    transform: scale(0.95);
+    box-shadow:  20px 20px 60px #000000,
+                 -20px -20px 60px #3f3f3f;
+}
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
     .sidebar {
@@ -93,7 +120,8 @@ div.content {
     font-size:larger;
     color: white;
     text-align:center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    margin: 50px;
     
 }
 
