@@ -1,6 +1,9 @@
 ::selection{
     background:#25f884;
 }
+::-moz-selection{
+    background:#25f884;
+}
 body{
     margin:0px;
     padding: 0;
